@@ -61,7 +61,6 @@ local function hookSocket(prompt)
 		if allSocketsActivated() then
 			value.Value = true
 			print("ALL SOCKETS ACTIVATED")
-			-- trigger your field / door / puzzle here
 		end
 	end)
 end

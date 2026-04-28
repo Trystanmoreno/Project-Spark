@@ -34,7 +34,6 @@ textLabel.Text = sceneTexts[currentSceneIndex]
 
 button.MouseButton1Click:Connect(function()
 
-	-- Add 1 to our index
 	currentSceneIndex += 1
 
 	-- Check if we still have scenes left to show
@@ -46,9 +45,5 @@ button.MouseButton1Click:Connect(function()
 		-- If the index goes past 4, the cutscene is over
 		task.wait(1)
 		fadeOut()
-
-		-- You would probably add code here to destroy the UI 
-		-- or start the actual gameplay!
-		-- script.Parent:Destroy() 
 	end
 end)
